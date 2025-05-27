@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
-import * as process from "node:process";
 import {v4 as uuidv4} from 'uuid';
+
 
 interface FileNode {
     key: string;

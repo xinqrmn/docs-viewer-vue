@@ -6,7 +6,7 @@ const props = defineProps<{
   file: string | null
 }>()
 
-const imageSrc = ref<string | null>(null)
+const imageSrc = ref<string | undefined>(undefined)
 const scale = ref(1)
 
 watch(() => props.file, (newFile) => {

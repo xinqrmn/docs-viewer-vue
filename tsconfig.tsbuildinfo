@@ -1,0 +1,1 @@
+{"root":["./src/app.vue","./src/main.ts","./src/vite-env.d.ts","./src/components/imageviewer.vue","./src/components/pdfviewer.vue","./src/components/treeviewer.vue","./src/router/index.ts","./src/views/viewerpage.vue","./utils/filescanner.ts"],"errors":true,"version":"5.8.3"}

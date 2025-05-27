@@ -2,18 +2,20 @@
 import PdfViewer from './PdfViewer.vue'
 import ImageViewer from './ImageViewer.vue'
 import Tree from 'primevue/tree';
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 
 interface TreeNode {
-  key: string | number;
+  key: string;
   label?: string;
   data?: string;
   icon?: string;
   ext?: string;
   children?: TreeNode[] | undefined;
 }
+const props = defineProps<{initialFile: string | null}>()
+const emit = defineEmits(['select'])
 
-const nodes = ref<TreeNode[]>([]);
+const nodes = ref<TreeNode[] | undefined>();
 const selectedKey = ref<{ [key: string]: boolean }>({});
 const selectedFile = ref<string | null>(null);
 const selectedExt = ref<string | null>(null);
@@ -27,13 +29,33 @@ onMounted(async () => {
   }
 })
 
+watch(() => props.initialFile, (newFile) => {
+  if (newFile) {
+    selectedFile.value = newFile
+    const ext = newFile.split('.').pop()?.toLowerCase() ?? null
+    selectedExt.value = ext
+
+    if (ext && ['pdf', 'jpg', 'jpeg', 'png', 'gif'].includes(ext)) {
+      selectedExt.value = ext
+    } else {
+      selectedExt.value = null
+    }
+  }
+}, { immediate: true })
+
 const onNodeSelect = (node: TreeNode) => {
   const ext = node.ext?.toLowerCase()
   const isImage = ['jpg', 'jpeg', 'png', 'gif'].includes(ext ?? '')
 
   if (ext === 'pdf' || isImage) {
     selectedFile.value = node.data || null
-    selectedExt.value = ext
+    selectedExt.value = ext || null
+
+    if (selectedFile.value) {
+      console.log(selectedFile.value)
+      emit('select', selectedFile.value)
+    }
+
   } else {
     selectedFile.value = null
     selectedExt.value = null
