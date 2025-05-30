@@ -1,12 +1,12 @@
 [
   {
-    "key": "aeaafa2a-8002-4c85-ac59-aff8c6def83c",
+    "key": "d076c386-77a0-4c76-b1aa-ca8e3ee0d4f2",
     "label": "documents",
     "icon": "pi pi-fw pi-folder",
     "data": "/docs/documents",
     "children": [
       {
-        "key": "0dd67cd8-1a2a-45d5-8a38-51736d36a296",
+        "key": "51520cac-d4a1-470e-b37d-eaa6c0b05193",
         "label": "compressed.tracemonkey-pldi-09 (1).pdf",
         "icon": "pi pi-fw pi-file",
         "ext": "pdf",
@@ -14,7 +14,7 @@
         "children": null
       },
       {
-        "key": "707bdce8-58eb-4819-8120-d955abfdc49a",
+        "key": "04f5a51e-d80b-4f13-a7de-8cef68056641",
         "label": "compressed.tracemonkey-pldi-09.pdf",
         "icon": "pi pi-fw pi-file",
         "ext": "pdf",
@@ -22,7 +22,7 @@
         "children": null
       },
       {
-        "key": "b310930a-2d20-4575-8851-88c1d0b6e438",
+        "key": "fc6789a1-6cb1-45e2-bff4-3d30815ca6f7",
         "label": "Метеостанция Imeteolabs AQM918_Паспорт_.pdf - Яндекс До.pdf",
         "icon": "pi pi-fw pi-file",
         "ext": "pdf",
@@ -30,7 +30,7 @@
         "children": null
       },
       {
-        "key": "c22c3da3-d3af-4b15-a1c3-3335153a14b0",
+        "key": "1f2d8bb0-506e-4f40-884f-f5c18e45bd2e",
         "label": "Презентация.pdf",
         "icon": "pi pi-fw pi-file",
         "ext": "pdf",
@@ -40,13 +40,13 @@
     ]
   },
   {
-    "key": "ed680ecc-ec26-458d-bf60-df57f1eed350",
+    "key": "dc25ec89-b197-4223-b1e1-8844941ef303",
     "label": "images",
     "icon": "pi pi-fw pi-folder",
     "data": "/docs/images",
     "children": [
       {
-        "key": "1ba76326-2f6c-465b-a735-216a853010b8",
+        "key": "44eb8a03-d92b-47a8-b5f8-a90858dbaf89",
         "label": "icons8-tesla-model-x-pulsar-color-16.png",
         "icon": "pi pi-fw pi-file",
         "ext": "png",
@@ -54,7 +54,7 @@
         "children": null
       },
       {
-        "key": "cdc2514e-b8a5-4d50-a657-9b9ff29ce399",
+        "key": "22f960a5-79df-45e4-bcc8-92ffc07a12e1",
         "label": "icons8-tesla-model-x-pulsar-color-32.png",
         "icon": "pi pi-fw pi-file",
         "ext": "png",
@@ -62,7 +62,7 @@
         "children": null
       },
       {
-        "key": "28ac4ffa-e6d2-4a46-9218-ca089caae6e9",
+        "key": "315ea3c5-deb3-4c7c-81eb-f2f8d1000684",
         "label": "icons8-tesla-model-x-pulsar-color-96.png",
         "icon": "pi pi-fw pi-file",
         "ext": "png",
@@ -70,7 +70,7 @@
         "children": null
       },
       {
-        "key": "662022b0-f102-4f16-a2e6-ee78bce9993d",
+        "key": "47f4e21a-6314-4534-8060-ed0cfb5d1678",
         "label": "sample-birch-400x300.jpg",
         "icon": "pi pi-fw pi-file",
         "ext": "jpg",
@@ -78,7 +78,7 @@
         "children": null
       },
       {
-        "key": "5d172745-5304-4153-b606-a637569b8c07",
+        "key": "7672047e-a8ab-459d-ac38-b7b6e087e296",
         "label": "sample-city-park-400x300.jpg",
         "icon": "pi pi-fw pi-file",
         "ext": "jpg",
@@ -86,7 +86,7 @@
         "children": null
       },
       {
-        "key": "070d8351-9111-4eac-8e79-c0c5025399f3",
+        "key": "2f594eef-8313-4181-9bba-887123ba1e40",
         "label": "sample-clouds-400x300.jpg",
         "icon": "pi pi-fw pi-file",
         "ext": "jpg",
@@ -94,5 +94,44 @@
         "children": null
       }
     ]
+  },
+  {
+    "key": "ab6491ec-8f84-4c87-a696-c77a0862888c",
+    "label": "iugil",
+    "icon": "pi pi-fw pi-folder",
+    "data": "/docs/iugil",
+    "children": []
+  },
+  {
+    "key": "d9cc46c1-f218-4c60-bd60-d7544fb3ce4c",
+    "label": "test",
+    "icon": "pi pi-fw pi-folder",
+    "data": "/docs/test",
+    "children": [
+      {
+        "key": "5838093a-838f-47e3-8583-eaca67505704",
+        "label": "sample-city-park-400x300.jpg",
+        "icon": "pi pi-fw pi-file",
+        "ext": "jpg",
+        "data": "/docs/test/sample-city-park-400x300.jpg",
+        "children": null
+      },
+      {
+        "key": "e6deb725-c958-4b67-b5ce-3ce90e9db94e",
+        "label": "sample-clouds-400x300.jpg",
+        "icon": "pi pi-fw pi-file",
+        "ext": "jpg",
+        "data": "/docs/test/sample-clouds-400x300.jpg",
+        "children": null
+      }
+    ]
+  },
+  {
+    "key": "84efb7e6-52d2-4100-9cd5-f8f821d4dca3",
+    "label": "Метеостанция Imeteolabs AQM918_Паспорт_.pdf - Яндекс До.pdf",
+    "icon": "pi pi-fw pi-file",
+    "ext": "pdf",
+    "data": "/docs/Метеостанция Imeteolabs AQM918_Паспорт_.pdf - Яндекс До.pdf",
+    "children": null
   }
 ]

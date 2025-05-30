@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ViewerPage from '../views/ViewerPage.vue'
 
 const routes = [
     {
         path: '/',
         name: 'Viewer',
-        component: ViewerPage
+        component: import('../views/ViewerPage.vue')
     }
 ]
 
