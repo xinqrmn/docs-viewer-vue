@@ -7,6 +7,7 @@
     "scan": "tsx ./utils/fileScanner.ts",
     "dev": "npm run scan && vite",
     "build": "vue-tsc -b && vite build",
+    "deploy": "npm run build && scp -r dist/* icbcom@192.168.63.202:/home/icbcom/docs-viewer",
     "preview": "vite preview"
   },
   "dependencies": {
