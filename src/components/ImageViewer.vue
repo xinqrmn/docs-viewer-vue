@@ -26,23 +26,24 @@ const handleWheel = (e: WheelEvent) => {
   const delta = e.deltaY * -0.001
   scale.value = Math.min(Math.max(0.5, scale.value + delta), 3)
 }
+
+const downloadFile = () => {
+  if (!props.file) return
+
+  const link = document.createElement('a')
+  link.href = props.file
+  link.download = props.file.split('/').pop() || 'document.pdf'
+  link.click()
+}
 </script>
 
 <template>
   <div class="image-viewer-wrapper">
     <div class="controls">
-      <Button
-          icon="pi pi-search-minus"
-          @click="scale = Math.max(0.5, scale - 0.1)"
-      />
-      <Button
-          icon="pi pi-search-plus"
-          @click="scale = Math.min(3, scale + 0.1)"
-      />
-      <Button
-          icon="pi pi-replay"
-          @click="resetView"
-      />
+      <Button icon="pi pi-search-minus" @click="scale = Math.max(0.5, scale - 0.1)"/>
+      <Button icon="pi pi-search-plus" @click="scale = Math.min(3, scale + 0.1)"/>
+      <Button icon="pi pi-replay" @click="resetView"/>
+      <Button icon="pi pi-download" label="Скачать" @click="downloadFile" />
     </div>
 
     <div

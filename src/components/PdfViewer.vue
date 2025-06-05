@@ -100,6 +100,15 @@ const handleWheelZoom = (e: WheelEvent) => {
   }
 }
 
+const downloadFile = () => {
+  if (!props.file) return
+
+  const link = document.createElement('a')
+  link.href = props.file
+  link.download = props.file.split('/').pop() || 'document.pdf'
+  link.click()
+}
+
 watch(scale, () => {
   renderPage(currentPage.value)
 })
@@ -132,6 +141,7 @@ watch(() => props.file, () => {
       <Button icon="pi pi-search-minus" @click="zoomOut" />
       <Button icon="pi pi-search-plus" @click="zoomIn" />
       <Button icon="pi pi-replay" @click="resetZoom" />
+      <Button icon="pi pi-download" label="Скачать" @click="downloadFile" />
     </div>
 
     <div class="pdf-container" @wheel="handleWheelZoom">
